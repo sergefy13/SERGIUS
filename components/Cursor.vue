@@ -37,7 +37,9 @@ const isTouchDevice = () => {
 
 onMounted(() => {
   // document.body.style.cursor = 'none';
-  document.body.classList.add('cursored')
+  if (isTouchDevice()) {
+    document.body.classList.add("cursored");
+  }
   window.addEventListener("mousemove", updateCursor);
   document.querySelectorAll("a, .navigation").forEach((element) => {
     element.addEventListener("mouseover", enlargeCursor);
@@ -46,7 +48,7 @@ onMounted(() => {
 });
 
 onUnmounted(() => {
-  document.body.classList.remove('cursored')
+  document.body.classList.remove("cursored");
   window.removeEventListener("mousemove", updateCursor);
   document.querySelectorAll("a, .navigation").forEach((element) => {
     element.removeEventListener("mouseover", enlargeCursor);
@@ -56,6 +58,10 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
+body.cursored .cursor {
+  display: inherit;
+}
+
 .cursor {
   position: fixed;
   top: 0;
@@ -67,5 +73,6 @@ onUnmounted(() => {
   background-color: #fbed21; /* bg-yellow-200 */
   transform: translate3d(var(--cursorX), var(--cursorY), 0);
   transition: width 0.3s ease, height 0.3s ease;
+  display: none;
 }
 </style>

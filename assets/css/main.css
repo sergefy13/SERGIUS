@@ -39,7 +39,9 @@ body.hovered .rotate-on-hover {
   }
 }
 
-
+.navigation{
+  cursor: pointer;
+}
 
 .page-enter-active,
 .page-leave-active {

@@ -1,7 +1,7 @@
 <template>
   <div class="w-full h-1/6 flex flex-row items-center">
-    <LogoMob v-if="mob" class="h-24" />
-    <Logo v-else class="h-24" />
+    <LogoMob v-if="mob" class="block h-24" />
+    <Logo v-else class="h-28" />
   </div>
 </template>
 
