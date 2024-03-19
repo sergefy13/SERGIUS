@@ -11,7 +11,7 @@ onMounted(() => {
   // Проверка ширины экрана и установка значения nav
   const handleResize = () => {
     const lgWidth = 1024; // Ширина для breakpoint 'lg' в Tailwind CSS
-    mob.value = window.innerWidth >= lgWidth;
+    mob.value = window.innerWidth <= lgWidth;
   };
 
   // Вызов функции при монтировании для начальной установки значения
