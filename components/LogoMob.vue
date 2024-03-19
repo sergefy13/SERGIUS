@@ -1,6 +1,6 @@
 <template>
   <NuxtLink to="/" class="flex" aria-label="Sergius">
-   <NuxtImg src="/img/logotype.png" class="p-2 hover:scale-110 transition-all"/>
+   <NuxtImg src="/img/logo.png" class="p-2 h-full w-full hover:scale-110 transition-all"/>
   </NuxtLink>
 </template>
 
