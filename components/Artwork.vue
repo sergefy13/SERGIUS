@@ -17,11 +17,11 @@
       @mouseout="soundIcon = false"
       ref="videoRef"
       v-if="data.mime === 'video'"
-      class="h-full md:w-auto navigation"
-      :class="data.proportion === 'height' ? 'h-full md:w-auto' : 'h-auto w-full'"
+      class="navigation"
+      :class="data.proportion === 'height' ? 'h-auto md:h-full w-full md:w-auto' : 'h-auto w-full lg:h-full lg:w-auto'"
       autoplay="true"
       muted
-      @click="toggleMute"
+      @click="toggleMute()"
     >
       <source :src="`/artworks/${data.path}`" type="video/mp4" />
       Your browser does not support the video tag.
