@@ -1,0 +1,62 @@
+:root {
+  font-family: "Madimi One", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #000;
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body.cursored {
+  cursor: none;
+}
+body.cursored a:-webkit-any-link {
+  cursor: none;
+}
+#app {
+  height: 100%;
+  min-height: 100vh;
+}
+
+body.hovered .rotate-on-hover {
+  transform: rotate(90deg) scale(2) translateX(300px);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    color: #fff;
+    background-color: #000;
+  }
+} */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #000;
+    background-color: #fff;
+  }
+}
+
+
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}

@@ -1,0 +1,39 @@
+{
+  "title": "Artwork",
+  "description": "Artworks made by SERGIUS",
+  "head": true,
+  "artworks": [
+    {
+      "title": "Dude and an Apple",
+      "year": 2023,
+      "medium": "computer graphics",
+      "path": "dudeandapple.mp4",
+      "proportion": "height",
+      "mime": "video"
+    },
+    {
+      "title": "Relevation",
+      "year": 2022,
+      "medium": "computer graphics",
+      "path": "Relevation.jpg",
+      "proportion": "height",
+      "mime": "image"
+    },
+    {
+      "title": "Heaven Scene",
+      "year": 2022,
+      "medium": "computer graphics",
+      "path": "Heaven-Scene.jpg",
+      "proportion": "width",
+      "mime": "image"
+    },
+    {
+      "title": "Triumph",
+      "year": 2022,
+      "medium": "computer graphics",
+      "proportion": "height",
+      "path": "Triumph.jpg",
+      "mime": "image"
+    }
+  ]
+}
